@@ -29,7 +29,7 @@
     "@ckeditor/ckeditor5-block-quote": "^37.1.0",
     "@ckeditor/ckeditor5-build-balloon": "^37.1.0",
     "@ckeditor/ckeditor5-build-balloon-block": "^37.1.0",
-    "@ckeditor/ckeditor5-build-classic": "^37.1.0",
+    "@lakaaio/ckeditor5-build-classic": "^37.1.0",
     "@ckeditor/ckeditor5-build-decoupled-document": "^37.1.0",
     "@ckeditor/ckeditor5-build-inline": "^37.1.0",
     "@ckeditor/ckeditor5-build-multi-root": "^37.1.0",
