@@ -79,6 +79,10 @@ eslint: {
 	errors: false,
 },
 [...]
-	
+```
+
+3 - Modify the importation of the plugin in `Editor.vue`
+~~import ClassicEditor from '@lakaaio/ckeditor5-build-classic';~~
+`import '@lakaaio/ckeditor5-build-classic';`
 
 </details>
