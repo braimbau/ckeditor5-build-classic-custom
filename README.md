@@ -2,7 +2,7 @@
 ========================================
 
 <details>
-	<summary>## changes with official classic editor plugin/summary>
+ <summary>## changes with official classic editor plugin</summary>
 	
 ### Plugins added:
 + Highlight
