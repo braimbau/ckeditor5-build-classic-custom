@@ -37,31 +37,25 @@
 
 `git clone git@github.com:ckeditor/ckeditor5.git`
 
-
 2 - Move to the packages folder  
 
 `cd ckeditor5/packages`
-
 
 3 - Clone the custom build from this repository  
 
 `git clone git@github.com:Lakaaio/ckeditor5-build-classic-custom.git`
 
-
 4 - Remove the original classic cuild  
 
 `rm -rf ckeditor5-build-classic`
-
 
 5 - Rename the custom build  
 
 `mv ckeditor5-build-classic-custom ckeditor5-build-classic`
 
-
 6 - Move to the classic build folder  
 
 `cd ckeditor5-build-classic`
-
 
 7 - Make all modification needed to the pacakge
 >Most changes happen in the src/ckeditor.ts file.  
@@ -72,14 +66,12 @@
 
 `npm i`
 
-
 9 - build the packahe
 
 `npm run build`
 
 <details>
  <summary>Test the changes localy</summary>
-
 
 1 - Move to the frontend of the main project 
 
@@ -99,25 +91,85 @@ eslint: {
 ```
 
 3 - Modify the import of the plugin in `Editor.vue`  
-	
+
 ~~import ClassicEditor from '@lakaaio/ckeditor5-build-classic';~~  
 `import '@lakaaio/ckeditor5-build-classic';`
-
 	
 4 - Remove the dependecy from git in `package.json`  
-	
+
 ~~"@lakaaio/ckeditor5-build-classic": "github:Lakaaio/ckeditor5-build-classic-custom",~~
 
-	
 5 - import the local package  
 	
 `npm i <path to package>/packages/ckeditor5-build-classic`  
 > this should this line in package.json  
 > "@lakaaio/ckeditor5-build-classic": "file:<path>ckeditor5-build-classic",
 
-	
 6 - Install dependencies with npm  
 
 `npm i`
+
+7 - Test  
+
+8 - Undo steps 2, 3, 4
+</details>
+	
+<details>
+ <summary>Test the changes localy</summary>
+
+1 - Move to the frontend of the main project 
+
+2 - Disable the linter in `quasar.conf.js`
+	
+```
+[...]
+eslint: {
+	// fix: true,
+	// include = [],
+	// exclude = [],
+	// rawOptions = {},
+	warnings: false,
+	errors: false,
+},
+[...]
+```
+
+3 - Modify the import of the plugin in `Editor.vue`  
+
+~~import ClassicEditor from '@lakaaio/ckeditor5-build-classic';~~  
+`import '@lakaaio/ckeditor5-build-classic';`
+	
+4 - Remove the dependecy from git in `package.json`  
+
+~~"@lakaaio/ckeditor5-build-classic": "github:Lakaaio/ckeditor5-build-classic-custom",~~
+
+5 - import the local package  
+	
+`npm i <path to package>/packages/ckeditor5-build-classic`  
+> this should this line in package.json  
+> "@lakaaio/ckeditor5-build-classic": "file:<path>ckeditor5-build-classic",
+
+6 - Install dependencies with npm  
+
+`npm i`
+
+7 - Test  
+
+8 - Undo steps 2, 3, 4
+
+Others methods to test it are referenced [here](https://blowstack.com/blog/create-ckeditor-5-custom-build/)
+
+</details>
+	
+	</details>
+	
+<details>
+ <summary>Test the changes localy</summary>
+
+1 - Make sure that the changes are working localy
+	
+2 - Add, commit and push to github
+
+3 - List any changes to the plugin list on top of the readme
 
 </details>
