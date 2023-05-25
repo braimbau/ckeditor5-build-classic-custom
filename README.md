@@ -104,14 +104,17 @@ eslint: {
 > this should this line in package.json  
 > "@lakaaio/ckeditor5-build-classic": "file:<path>ckeditor5-build-classic",
 
-6 - Install dependencies with npm  
+6 - delete the old packages
+`rm -rf node-modules`
+
+7 - Install dependencies with npm  
 
 `npm i`
 
-7 - Test
+8 - Test
 > You may want to modify Editor.vue to implement the features of the new plugins
 
-8 - Undo steps 2, 3, 4
+9 - Undo steps 2, 3, 4
 </details>
 		
 <details>
