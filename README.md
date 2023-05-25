@@ -1,5 +1,4 @@
 # CKEditor 5 classic editor build custom for Lakaa
-========================================
 
 <details>
  <summary> differences with official classic editor plugin</summary>
