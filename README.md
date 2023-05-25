@@ -58,6 +58,6 @@ Move to the classic build folder
 `cd ckeditor5-build-classic`
 
 Make all modification needed to the pacakge
->Most changes happen in the src/ckeditor.ts file
->If new plugins are added, dont forget to add them in the package.json
->Remember that the new plugin must match the version of all the others
+>Most changes happen in the src/ckeditor.ts file.  
+>If new plugins are added, dont forget to add them in the package.json.  
+>Remember that the new plugin must match the version of all the others.  
