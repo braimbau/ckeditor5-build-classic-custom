@@ -41,20 +41,4 @@ export default class ClassicEditor extends ClassicEditorBase {
 		ImageUpload,
 		ImageStyle
 	];
-
-	public static override defaultConfig = {
-		toolbar: [
-			'heading', '|', 'bold', 'italic', 'underline', 'NumberedList',
-				'BulletedList', '|', 'link', 'insertTable', '|', 'undo', 'redo',
-		],
-		table: {
-			contentToolbar: [
-				'tableColumn',
-				'tableRow',
-				'mergeTableCells'
-			]
-		},
-		// This value must be kept in sync with the language defined in webpack.config.js.
-		language: 'en'
-	};
 }
