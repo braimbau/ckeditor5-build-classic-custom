@@ -12,7 +12,7 @@ import { Link } from '@ckeditor/ckeditor5-link';
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Table } from '@ckeditor/ckeditor5-table';
+import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { List } from '@ckeditor/ckeditor5-list';
 import { Highlight } from '@ckeditor/ckeditor5-highlight';
 import Image from '@ckeditor/ckeditor5-image/src/image';
@@ -32,6 +32,7 @@ export default class ClassicEditor extends ClassicEditorBase {
 		SimpleUploadAdapter,
 		Heading,
 		Table,
+		TableToolbar,
 		List,
 		Highlight,
 		Image,
@@ -42,12 +43,10 @@ export default class ClassicEditor extends ClassicEditorBase {
 	];
 
 	public static override defaultConfig = {
-		toolbar: {
-			items: [
-				'heading', '|', 'bold', 'italic', 'underline', 'NumberedList',
+		toolbar: [
+			'heading', '|', 'bold', 'italic', 'underline', 'NumberedList',
 				'BulletedList', '|', 'link', 'insertTable', '|', 'undo', 'redo',
-			]
-		},
+		],
 		table: {
 			contentToolbar: [
 				'tableColumn',
