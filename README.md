@@ -44,7 +44,7 @@
 
 `git clone git@github.com:Lakaaio/ckeditor5-build-classic-custom.git`
 
-4 - Remove the original classic cuild
+4 - Remove the original classic build
 
 `rm -rf ckeditor5-build-classic`
 
@@ -101,7 +101,7 @@ eslint: {
 5 - import the local package
 
 `npm i <path to package>/packages/ckeditor5-build-classic`
-> this should this line in package.json
+> this should add this line in package.json
 > "@lakaaio/ckeditor5-build-classic": "file:<path>ckeditor5-build-classic",
 
 6 - delete the old packages
@@ -121,9 +121,11 @@ eslint: {
  <summary>Make the changes permanent</summary>
 
 1 - Make sure that the changes are working localy
+	
+2 - Update the version in package.json
 
-2 - Add, commit and push to github
+3 - Add, commit and push to github
 
-3 - List any changes to the plugin list on top of the readme
+4 - List any changes to the plugin list on top of the readme
 
 </details>
